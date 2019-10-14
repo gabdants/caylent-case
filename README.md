@@ -24,7 +24,7 @@ The entire application solution should be based on Helm, as well as the develope
 
 The infra solution was developed with resilience and security in mind. The choice of EKS was based on the user's experience to access the application, as the resilience of always leaving the service up and running is always a priority.
 The VPC created between the cluster and the databases restricts data access to the application only.
-CDN will help to cache user data and sessions.
+CDN will help to cache user data and sessions. And as requested for databases solution, the RDS(Relational) and DynamoDB(Non-Relational) will do their jobs.
 
 **Follows diagram below:**
 
