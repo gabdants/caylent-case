@@ -28,4 +28,4 @@ CDN will help to cache user data and sessions.
 
 **Follows diagram below:**
 
-![alt text](./)
+![alt text](https://raw.githubusercontent.com/gabdants/caylent-case/master/Caylent-3.png)
