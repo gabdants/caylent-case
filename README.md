@@ -12,13 +12,13 @@ As such, this jenkins can be easily installed into the EKS cluster via Helm, mak
 The entire application solution should be based on Helm, as well as the developer can do manual testing on a test cluster, Helm provides excellent management of Kubernetes objects.
 
 #### Steps
-- ** Checkout / Config ** - Checkout the Git repository that may be tied to a web hook to start the pipeline. The config part is to read user-imposed variables in some Git prod or info file;
-- ** Build ** - Will build the user's Dockerfile to generate the image and package the helm;
-- ** Unit Tests ** - Execution of unit tests of the application to guarantee the quality of the code;
-- ** Publish ** - If the application has unit tests with adequate coverage, the pipeline will publish the image and chart to some artifact repository;
-- ** Deploy UAT ** - Deploy via helm of a Kuberent object, probably a Pod, in a non-productive environment;
-- ** Functional Tests ** - Functional tests to ensure the functioning of the application;
-- ** Deploy Prod ** - Deploy via helm of a Kuberent object, probably a Pod, in production after validation of functional tests.
+- **Checkout/Config** - Checkout the Git repository that may be tied to a web hook to start the pipeline. The config part is to read user-imposed variables in some Git prod or info file;
+- **Build** - Will build the user's Dockerfile to generate the image and package the helm;
+- **Unit Tests** - Execution of unit tests of the application to guarantee the quality of the code;
+- **Publish** - If the application has unit tests with adequate coverage, the pipeline will publish the image and chart to some artifact repository;
+- **Deploy UAT** - Deploy via helm of a Kuberent object, probably a Pod, in a non-productive environment;
+- **Functional Tests** - Functional tests to ensure the functioning of the application;
+- **Deploy Prod** - Deploy via helm of a Kuberent object, probably a Pod, in production after validation of functional tests.
 
 ## Infrastructure Solution
 
@@ -26,6 +26,6 @@ The infra solution was developed with resilience and security in mind. The choic
 The VPC created between the cluster and the databases restricts data access to the application only.
 CDN will help to cache user data and sessions.
 
-** Follows diagram below: **
+**Follows diagram below:**
 
 ![alt text](./)
